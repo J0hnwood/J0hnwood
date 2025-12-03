@@ -28,6 +28,7 @@ My goal is to build a solid foundation in offensive security and technical analy
 - C
 - Python
 - JAVA
+- assembly
 - JS
 - PHP
 - Mysql, postgresql
