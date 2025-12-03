@@ -49,7 +49,7 @@ My goal is to build a solid foundation in offensive security and technical analy
 
 ---
 
-## 💬 Contact
+## Contact
 - Email: johnwd148@gmail.com
 
 ---
