@@ -41,6 +41,35 @@ def prompt(cmd):
     ]
 
 
+# ── easter egg: visitors have to decode these themselves ──────────────
+SECRET = "flag{y0u_r34d_h3x_l1k3_a_h4ck3r}"  # shown only as hex
+HINT = "hex -> ascii"  # shown only as binary
+
+
+def hexdump(data):
+    """xxd-style rows with the ASCII column masked, so it has to be decoded by hand."""
+    rows = []
+    for off in range(0, len(data), 16):
+        chunk = data[off:off + 16]
+        groups = " ".join(chunk[i:i + 2].hex() for i in range(0, len(chunk), 2))
+        rows.append([(f"{off:08x}: ", DIM), (f"{groups:<40}", GREEN), ("  ", FG), ("▒" * len(chunk), DIM)])
+    return rows
+
+
+def binary(text, per_line=6):
+    bits = [f"{b:08b}" for b in text.encode()]
+    return [[(" ".join(bits[i:i + per_line]), CYAN)] for i in range(0, len(bits), per_line)]
+
+
+SECRET_LINES = (
+    prompt("xxd ./secret.bin")[:1]
+    + hexdump(SECRET.encode())
+    + [[], [("J0hnwood@ubuntu", U_GREEN), (":", FG), ("~", U_BLUE), ("$ ", FG), ("cat ./hint", FG)]]
+    + binary(HINT)
+    + [[], [("# ", DIM), ("ascii column redacted. ", DIM), ("decode it yourself.", YELLOW)]]
+)
+
+
 BLOCKS = {
     "boot": ("J0hnwood@ubuntu: ~ — journalctl -b", [
         [("[  ", FG), ("OK", GREEN), ("  ] ", FG), ("Loading kernel modules ......................... ", FG), ("done", GREEN)],
@@ -107,6 +136,7 @@ BLOCKS = {
         [("[ ] ", RED), ("Earn a CVE of my own", FG)],
         [("[ ] ", RED), ("Publish deep technical write-ups for every challenge solved", FG)],
     ]),
+    "secret": ("J0hnwood@ubuntu: ~ — secret.bin", SECRET_LINES),
     "closed": ("J0hnwood@ubuntu: ~", [
         [("[ connection closed by foreign host ]", DIM)],
     ]),

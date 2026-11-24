@@ -28,6 +28,8 @@
 
 <img src="./assets/goals.svg" alt="goals" width="100%" />
 
+<img src="./assets/secret.svg" alt="xxd ./secret.bin — decode it yourself" width="100%" />
+
 ## `$ ./stats.sh`
 
 <div align="center">
