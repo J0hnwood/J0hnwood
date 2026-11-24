@@ -2,24 +2,13 @@
 
 <img src="./assets/banner.svg" alt="J0hnwood" width="100%" />
 
-<a href="https://github.com/J0hnwood">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3000&pause=800&color=00FF9C&center=true&vCenter=true&width=560&lines=%24+whoami;Cybersecurity+Learner;Web+Hacking+%C2%B7+System+Hacking+%C2%B7+Reversing" alt="Typing SVG" />
-</a>
-
-<br/>
-
 <img src="https://img.shields.io/badge/Web%20Hacking-000000?style=for-the-badge&logo=burpsuite&logoColor=00ff9c" />
 <img src="https://img.shields.io/badge/System%20Hacking-000000?style=for-the-badge&logo=linux&logoColor=00ff9c" />
 <img src="https://img.shields.io/badge/Reverse%20Engineering-000000?style=for-the-badge&logo=hackthebox&logoColor=00ff9c" />
 
 <br/>
 
-<img src="https://skillicons.dev/icons?i=c,cpp,python,java,js,php,mysql,postgres&theme=dark" alt="languages" />
-<br/>
-<img src="https://skillicons.dev/icons?i=apple,ubuntu,kde,vscode,sublime,vim,docker&theme=dark" alt="tools" />
-<br/>
-<img src="https://img.shields.io/badge/Burp%20Suite-learning-0d1117?style=flat-square&logo=burpsuite&logoColor=ff6633&labelColor=0d1117&color=00ff9c" />
-<img src="https://img.shields.io/badge/Assembly-x86%20%2F%20ARM-0d1117?style=flat-square&logo=assemblyscript&logoColor=00ff9c&labelColor=0d1117&color=00ff9c" />
+<img src="./assets/skills.svg" alt="C · C++ · Python · Java · JavaScript · PHP · Assembly · MySQL · PostgreSQL · Ubuntu · Debian · Linux · Vim · VS Code · Sublime · Docker · GitHub · AWS · Oracle · Burp Suite" width="608" />
 
 </div>
 
