@@ -60,24 +60,28 @@ J0hnwood  1342   0.1  Z     ./sleep   # zombie process, rarely scheduled
 ## `$ cat goals.md`
 
 ```diff
-# ── Stage 1 : Foundation ───────────────────────────
-+ [x] Set up a Linux / macOS security lab
-+ [x] Get comfortable with C, Python and the terminal
-- [ ] Master pointers, memory layout and the stack
+# ── [ PWN ] ────────────────────────────────────────
+- [ ] Bypass NX · ASLR · PIE · Canary and chain full ROP exploits
+- [ ] glibc heap exploitation : tcache · fastbin · unsorted bin attacks
+- [ ] Format string → arbitrary read / write → shell
+- [ ] Linux kernel exploitation basics (UAF · race condition · ret2usr)
 
-# ── Stage 2 : Exploitation ─────────────────────────
-- [ ] Solve web wargames (SQLi · XSS · SSRF · auth bypass)
-- [ ] Learn buffer overflow → ROP on Linux binaries
-- [ ] Use Burp Suite fluently in real assessments
+# ── [ WEB ] ────────────────────────────────────────
+- [ ] Chain bugs : SSRF → internal RCE, SSTI, insecure deserialization
+- [ ] Break auth : JWT · OAuth · session logic flaws
+- [ ] Prototype pollution & race conditions in modern web apps
+- [ ] Submit valid reports to a real bug bounty program
 
-# ── Stage 3 : Analysis ─────────────────────────────
-- [ ] Reverse crackmes with Ghidra / IDA
-- [ ] Analyze real-world malware samples safely
-- [ ] Write up every solve and publish it here
+# ── [ REVERSING ] ──────────────────────────────────
+- [ ] Unpack packed binaries & defeat anti-debugging tricks
+- [ ] Reverse Windows PE and Android apps (Frida hooking)
+- [ ] Reproduce a public CVE from patch diff (1-day analysis)
+- [ ] Fuzz a real target with AFL++ and triage the crashes
 
-# ── Long term ──────────────────────────────────────
-- [ ] Play CTFs regularly with a team
-- [ ] Work in cyber-threat intelligence & security research
+# ── [ MILESTONES ] ─────────────────────────────────
+- [ ] Rank in the top tier of domestic CTFs with a team
+- [ ] Earn a CVE of my own
+- [ ] Publish deep technical write-ups for every challenge solved
 ```
 
 ## `$ ./stats.sh`
