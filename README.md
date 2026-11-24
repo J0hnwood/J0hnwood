@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:00ff9c&height=170&section=header&text=J0hnwood&fontColor=00ff9c&fontSize=60&fontAlignY=38&desc=root@J0hnwood:~%23&descAlignY=60&descSize=18" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,60:020d07,100:0a3d24&height=170&section=header&text=J0hnwood&fontColor=00ff9c&fontSize=60&fontAlignY=38&desc=root@J0hnwood:~%23&descAlignY=60&descSize=18" width="100%" />
 
 <a href="https://github.com/J0hnwood">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=3000&pause=800&color=00FF9C&center=true&vCenter=true&width=560&lines=%24+whoami;Cybersecurity+Learner;Web+Hacking+%C2%B7+System+Hacking+%C2%B7+Reversing" alt="Typing SVG" />
@@ -8,9 +8,9 @@
 
 <br/>
 
-<img src="https://img.shields.io/badge/Web%20Hacking-0d1117?style=for-the-badge&logo=burpsuite&logoColor=00ff9c" />
-<img src="https://img.shields.io/badge/System%20Hacking-0d1117?style=for-the-badge&logo=linux&logoColor=00ff9c" />
-<img src="https://img.shields.io/badge/Reverse%20Engineering-0d1117?style=for-the-badge&logo=hackthebox&logoColor=00ff9c" />
+<img src="https://img.shields.io/badge/Web%20Hacking-000000?style=for-the-badge&logo=burpsuite&logoColor=00ff9c" />
+<img src="https://img.shields.io/badge/System%20Hacking-000000?style=for-the-badge&logo=linux&logoColor=00ff9c" />
+<img src="https://img.shields.io/badge/Reverse%20Engineering-000000?style=for-the-badge&logo=hackthebox&logoColor=00ff9c" />
 
 </div>
 
@@ -117,7 +117,7 @@ Nmap done: 1 IP address (1 host up) scanned in 13.37 seconds
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=J0hnwood&show_icons=true&hide_rank=true&hide_border=true&bg_color=0d1117&title_color=00ff9c&icon_color=00ff9c&text_color=c9d1d9" height="165" />
+<img src="https://github-readme-stats.vercel.app/api?username=J0hnwood&show_icons=true&hide_rank=true&hide_border=true&bg_color=000000&title_color=00ff9c&icon_color=00ff9c&text_color=c9d1d9" height="165" />
 
 </div>
 
@@ -139,6 +139,6 @@ Nmap done: 1 IP address (1 host up) scanned in 13.37 seconds
 [ connection closed by foreign host ]
 ```
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00ff9c,100:0d1117&height=100&section=footer" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a3d24,40:020d07,100:000000&height=100&section=footer" width="100%" />
 
 </div>
