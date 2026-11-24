@@ -17,6 +17,16 @@
 ---
 
 ```console
+[  OK  ] Loading kernel modules ......................... done
+[  OK  ] Mounting /dev/brain ............................ done
+[  OK  ] Starting caffeine.service ...................... done
+[  OK  ] Starting exploit-dev.service ................... done
+[  OK  ] Starting reverse-engineering.service ........... done
+[ WARN ] sleep.service failed to start (dependency: deadline)
+[  OK  ] Reached target: J0hnwood online
+```
+
+```console
 ┌──(J0hnwood㉿macbook)-[~]
 └─$ cat about_me.txt
 
@@ -38,6 +48,25 @@ J0hnwood  1339  14.3  S     ./web --http --auth --sqli --xss
 J0hnwood  1340   9.8  S     ./asm --x86 --arm --read-disassembly
 J0hnwood  1341   6.4  S     ./linux --internals --syscalls --elf
 J0hnwood  1342   0.1  Z     ./sleep   # zombie process, rarely scheduled
+```
+
+## `$ nmap -sV J0hnwood`
+
+```console
+Starting Nmap 7.95 ( https://nmap.org )
+Nmap scan report for J0hnwood (127.0.0.1)
+Host is up (0.0013s latency).
+
+PORT       STATE     SERVICE     VERSION
+22/tcp     open      linux       Ubuntu (KDE) / macOS daily driver
+80/tcp     open      web-hack    Burp Suite · SQLi · XSS · SSRF · auth
+443/tcp    open      python      automation · scraping · data analysis
+1337/tcp   open      pwn         C/C++ · stack · ROP · heap (in progress)
+3306/tcp   open      database    MySQL · PostgreSQL
+31337/tcp  open      reversing   x86 / ARM assembly · IDA · Ghidra
+8080/tcp   filtered  sleep       no response
+
+Nmap done: 1 IP address (1 host up) scanned in 13.37 seconds
 ```
 
 ## `$ ls ~/arsenal`
@@ -89,6 +118,18 @@ J0hnwood  1342   0.1  Z     ./sleep   # zombie process, rarely scheduled
 <div align="center">
 
 <img src="https://github-readme-stats.vercel.app/api?username=J0hnwood&show_icons=true&hide_rank=true&hide_border=true&bg_color=0d1117&title_color=00ff9c&icon_color=00ff9c&text_color=c9d1d9" height="165" />
+
+</div>
+
+## `$ ./snake --eat contributions`
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/J0hnwood/J0hnwood/output/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/J0hnwood/J0hnwood/output/snake-light.svg" />
+  <img alt="contribution snake" src="https://raw.githubusercontent.com/J0hnwood/J0hnwood/output/snake-dark.svg" />
+</picture>
 
 </div>
 
