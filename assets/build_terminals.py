@@ -158,9 +158,9 @@ def render(title, lines):
 
 def render_banner():
     """Header: an Ubuntu terminal that prints the name in big glitchy neon."""
-    height = 250
+    height = 230
     cx = WIDTH / 2
-    name_y = 150
+    name_y = 162
     big = 'font-size:78px;font-weight:800;letter-spacing:4px'
     return "\n".join([
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{height}" viewBox="0 0 {WIDTH} {height}">',
@@ -188,8 +188,6 @@ def render_banner():
         f'<tspan fill="{U_GREEN}">J0hnwood@ubuntu</tspan><tspan fill="{FG}">:</tspan>'
         f'<tspan fill="{U_BLUE}">~</tspan><tspan fill="{FG}">$ ./whoami --banner</tspan></text>',
         f'<text x="{cx}" y="{name_y}" text-anchor="middle" fill="{GREEN}" filter="url(#glow)" style="{big}">J0hnwood</text>',
-        f'<text x="{cx}" y="{name_y + 42}" text-anchor="middle" fill="{DIM}" xml:space="preserve" style="font-size:15px">'
-        f'// cybersecurity learner  ·  pwn  ·  web  ·  reversing</text>',
         f'<text x="{PAD_X}" y="{height - 18}" xml:space="preserve"><tspan fill="{U_GREEN}">J0hnwood@ubuntu</tspan>'
         f'<tspan fill="{FG}">:</tspan><tspan fill="{U_BLUE}">~</tspan><tspan fill="{FG}">$</tspan>'
         f'<tspan class="cur" fill="{GREEN}"> █</tspan></text>',
