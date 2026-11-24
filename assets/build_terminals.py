@@ -3,6 +3,7 @@
 Edit the BLOCKS below, then run:  python3 assets/build_terminals.py
 Each block becomes assets/<name>.svg.
 """
+import base64
 from pathlib import Path
 from xml.sax.saxutils import escape
 
@@ -44,6 +45,7 @@ def prompt(cmd):
 # ── easter egg: visitors have to decode these themselves ──────────────
 SECRET = "flag{n0t_f0r3v3r}"  # shown only as hex
 HINT = "hex -> ascii"  # shown only as binary
+CONTACT = "johnwd148@gmail.com"  # shown only as base64
 
 
 def hexdump(data):
@@ -66,7 +68,9 @@ SECRET_LINES = (
     + hexdump(SECRET.encode())
     + [[], [("J0hnwood@ubuntu", U_GREEN), (":", FG), ("~", U_BLUE), ("$ ", FG), ("cat ./hint", FG)]]
     + binary(HINT)
-    + [[], [("# ", DIM), ("ascii column redacted. ", DIM), ("decode it yourself.", YELLOW)]]
+    + [[], [("J0hnwood@ubuntu", U_GREEN), (":", FG), ("~", U_BLUE), ("$ ", FG), ("cat ./contact.b64", FG)]]
+    + [[(base64.b64encode(CONTACT.encode()).decode(), PURPLE)]]
+    + [[], [("# ", DIM), ("solved it? ", DIM), ("send the flag to the address above.", YELLOW)]]
 )
 
 
