@@ -38,13 +38,7 @@
 
 </div>
 
-## `$ ./snake --eat contributions`
-
-<div align="center">
-
-<img alt="contribution snake" src="https://raw.githubusercontent.com/J0hnwood/J0hnwood/output/snake-dark.svg" width="100%" />
-
-</div>
+<img src="./assets/notforever.svg" alt="NOT FOREVER" width="100%" />
 
 <div align="center">
 

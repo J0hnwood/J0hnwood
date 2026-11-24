@@ -230,9 +230,78 @@ def render_banner():
     ]) + "\n"
 
 
+# ── contribution-graph art: NOT FOREVER written column by column ──────
+GRID_GLYPHS = {
+    "N": ["1001", "1101", "1011", "1001", "1001"],
+    "O": ["111", "101", "101", "101", "111"],
+    "T": ["111", "010", "010", "010", "010"],
+    "F": ["111", "100", "110", "100", "100"],
+    "R": ["110", "101", "110", "101", "101"],
+    "E": ["111", "100", "110", "100", "111"],
+    "V": ["101", "101", "101", "101", "010"],
+    " ": ["00", "00", "00", "00", "00"],
+}
+GRID_TEXT = "NOT FOREVER"
+
+
+def grid_bitmap():
+    cols = []
+    for i, ch in enumerate(GRID_TEXT):
+        g = GRID_GLYPHS[ch]
+        cols += [[g[y][x] == "1" for y in range(5)] for x in range(len(g[0]))]
+        if i < len(GRID_TEXT) - 1 and " " not in (ch, GRID_TEXT[i + 1]):
+            cols.append([False] * 5)
+    return cols
+
+
+def render_grid():
+    """A 53x7 contribution grid whose cells light up left to right, hold, then wipe."""
+    weeks, days, cell, pitch = 53, 7, 11, 14
+    cycle, sweep = 9.0, 2.6  # seconds: full loop, time for the write-in sweep
+    bitmap = grid_bitmap()
+    start = (weeks - len(bitmap)) // 2
+    grid_w = weeks * pitch - (pitch - cell)
+    top = TITLE_H + 22 + LINE_H
+    height = top + days * pitch + 26
+    gx = (WIDTH - grid_w) / 2
+    out = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{height}" viewBox="0 0 {WIDTH} {height}">',
+        '<defs><filter id="g" x="-50%" y="-50%" width="200%" height="200%">'
+        '<feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/>'
+        '<feMergeNode in="SourceGraphic"/></feMerge></filter></defs>',
+        "<style>text{font-family:'JetBrains Mono','Fira Code',SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;"
+        f"font-size:{FONT}px;white-space:pre}}"
+        "@keyframes on{0%{opacity:0}4%{opacity:1}72%{opacity:1}78%{opacity:0}100%{opacity:0}}"
+        f".p{{opacity:0;animation:on {cycle}s linear infinite both}}</style>",
+        f'<rect x="0.5" y="0.5" width="{WIDTH - 1}" height="{height - 1}" rx="10" fill="{BG}" stroke="{BORDER}"/>',
+        f'<path d="M0.5 {TITLE_H} V10.5 a10 10 0 0 1 10 -10 H{WIDTH - 10.5} a10 10 0 0 1 10 10 V{TITLE_H} Z" fill="{BAR}"/>',
+        f'<line x1="0.5" y1="{TITLE_H}" x2="{WIDTH - 0.5}" y2="{TITLE_H}" stroke="{BORDER}"/>',
+        window_buttons(),
+        f'<text x="{WIDTH / 2}" y="23" text-anchor="middle" fill="#cfcfcf" style="font-size:12px;font-weight:bold">J0hnwood@ubuntu: ~</text>',
+        f'<text x="{PAD_X}" y="{TITLE_H + 26}" xml:space="preserve"><tspan fill="{U_GREEN}">J0hnwood@ubuntu</tspan>'
+        f'<tspan fill="{FG}">:</tspan><tspan fill="{U_BLUE}">~</tspan><tspan fill="{FG}">$ git log --graph --since=forever</tspan></text>',
+    ]
+    for c in range(weeks):
+        for r in range(days):
+            out.append(f'<rect x="{gx + c * pitch:.1f}" y="{top + r * pitch}" width="{cell}" height="{cell}" rx="2" fill="#161b22"/>')
+    lit = []
+    for i, col in enumerate(bitmap):
+        delay = sweep * i / max(1, len(bitmap) - 1)
+        for r, on in enumerate(col):
+            if on:
+                x, y = gx + (start + i) * pitch, top + (r + 1) * pitch
+                lit.append(f'<rect class="p" style="animation-delay:{delay:.2f}s" x="{x:.1f}" y="{y}" '
+                           f'width="{cell}" height="{cell}" rx="2" fill="{GREEN}" filter="url(#g)"/>')
+    out += lit
+    out.append("</svg>")
+    return "\n".join(out) + "\n"
+
+
 if __name__ == "__main__":
     (OUT / "banner.svg").write_text(render_banner(), encoding="utf-8")
     print("wrote assets/banner.svg")
+    (OUT / "notforever.svg").write_text(render_grid(), encoding="utf-8")
+    print("wrote assets/notforever.svg")
     for name, (title, lines) in BLOCKS.items():
         longest = max((sum(len(t) for t, _ in l) for l in lines), default=0)
         assert longest <= COLS, f"{name}: line of {longest} chars exceeds {COLS}"
