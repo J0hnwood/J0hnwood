@@ -12,6 +12,15 @@
 <img src="https://img.shields.io/badge/System%20Hacking-000000?style=for-the-badge&logo=linux&logoColor=00ff9c" />
 <img src="https://img.shields.io/badge/Reverse%20Engineering-000000?style=for-the-badge&logo=hackthebox&logoColor=00ff9c" />
 
+<br/>
+
+<img src="https://skillicons.dev/icons?i=c,cpp,python,java,js,php,mysql,postgres&theme=dark" alt="languages" />
+<br/>
+<img src="https://skillicons.dev/icons?i=apple,ubuntu,kde,vscode,sublime,vim,docker&theme=dark" alt="tools" />
+<br/>
+<img src="https://img.shields.io/badge/Burp%20Suite-learning-0d1117?style=flat-square&logo=burpsuite&logoColor=ff6633&labelColor=0d1117&color=00ff9c" />
+<img src="https://img.shields.io/badge/Assembly-x86%20%2F%20ARM-0d1117?style=flat-square&logo=assemblyscript&logoColor=00ff9c&labelColor=0d1117&color=00ff9c" />
+
 </div>
 
 ---
@@ -23,23 +32,6 @@
 <img src="./assets/ps.svg" alt="ps aux" width="100%" />
 
 <img src="./assets/nmap.svg" alt="nmap scan" width="100%" />
-
-## `$ ls ~/arsenal`
-
-<div align="center">
-
-**Languages**
-
-<img src="https://skillicons.dev/icons?i=c,cpp,python,java,js,php,mysql,postgres&theme=dark" />
-
-**Tools / OS**
-
-<img src="https://skillicons.dev/icons?i=apple,ubuntu,kde,vscode,sublime,vim,docker&theme=dark" />
-<br/>
-<img src="https://img.shields.io/badge/Burp%20Suite-learning-0d1117?style=flat-square&logo=burpsuite&logoColor=ff6633&labelColor=0d1117&color=00ff9c" />
-<img src="https://img.shields.io/badge/Assembly-x86%20%2F%20ARM-0d1117?style=flat-square&logo=assemblyscript&logoColor=00ff9c&labelColor=0d1117&color=00ff9c" />
-
-</div>
 
 <img src="./assets/goals.svg" alt="goals" width="100%" />
 
