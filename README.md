@@ -10,6 +10,10 @@
 
 <img src="./assets/skills.svg" alt="C · C++ · Python · Java · JavaScript · PHP · Assembly · MySQL · PostgreSQL · Ubuntu · Debian · Linux · Vim · VS Code · Sublime · Docker · GitHub · AWS · Oracle · Burp Suite" width="608" />
 
+<br/><br/>
+
+<a href="mailto:johnwd148@gmail.com"><img src="https://img.shields.io/badge/contact-johnwd148%40gmail.com-0a3d24?style=flat-square&logo=gmail&logoColor=00ff9c&labelColor=000000" alt="Email johnwd148@gmail.com" /></a>
+
 </div>
 
 ---
