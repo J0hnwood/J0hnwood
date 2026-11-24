@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="817" height="277" viewBox="0 0 817 277">
+<style>text{font-family:'JetBrains Mono','Fira Code',SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;font-size:14px;white-space:pre}@keyframes b{50%{opacity:0}}.cur{animation:b 1s steps(1) infinite}</style>
+<rect x="0.5" y="0.5" width="816" height="276" rx="10" fill="#000000" stroke="#0f3d24"/>
+<path d="M0.5 34 V10.5 a10 10 0 0 1 10 -10 H806.5 a10 10 0 0 1 10 10 V34 Z" fill="#0b0f0c"/>
+<line x1="0.5" y1="34" x2="816.5" y2="34" stroke="#0f3d24"/>
+<circle cx="20" cy="17" r="6" fill="#ff5f56"/><circle cx="40" cy="17" r="6" fill="#ffbd2e"/><circle cx="60" cy="17" r="6" fill="#27c93f"/>
+<text x="408.5" y="22" text-anchor="middle" fill="#5c6370" style="font-size:12px">zsh — ps aux</text>
+<text x="22" y="60" xml:space="preserve"><tspan fill="#58a6ff">┌──(</tspan><tspan fill="#00ff9c">J0hnwood㉿macbook</tspan><tspan fill="#58a6ff">)-[</tspan><tspan fill="#c9d1d9">~</tspan><tspan fill="#58a6ff">]</tspan></text>
+<text x="22" y="81" xml:space="preserve"><tspan fill="#58a6ff">└─</tspan><tspan fill="#00ff9c">$ </tspan><tspan fill="#c9d1d9">ps aux | grep J0hnwood</tspan></text>
+<text x="22" y="123" xml:space="preserve"><tspan fill="#5c6370">USER      PID   %CPU  STAT  COMMAND</tspan></text>
+<text x="22" y="144" xml:space="preserve"><tspan fill="#3fb950">J0hnwood  </tspan><tspan fill="#c9d1d9">1337  42.0  </tspan><tspan fill="#00ff9c">R+    </tspan><tspan fill="#c9d1d9">./c_cpp --memory --pointers --for-reversing</tspan></text>
+<text x="22" y="165" xml:space="preserve"><tspan fill="#3fb950">J0hnwood  </tspan><tspan fill="#c9d1d9">1338  27.5  </tspan><tspan fill="#00ff9c">R     </tspan><tspan fill="#c9d1d9">./python --automation --scraping --data-analysis</tspan></text>
+<text x="22" y="186" xml:space="preserve"><tspan fill="#3fb950">J0hnwood  </tspan><tspan fill="#c9d1d9">1339  14.3  </tspan><tspan fill="#39c5cf">S     </tspan><tspan fill="#c9d1d9">./web --http --auth --sqli --xss</tspan></text>
+<text x="22" y="207" xml:space="preserve"><tspan fill="#3fb950">J0hnwood  </tspan><tspan fill="#c9d1d9">1340   9.8  </tspan><tspan fill="#39c5cf">S     </tspan><tspan fill="#c9d1d9">./asm --x86 --arm --read-disassembly</tspan></text>
+<text x="22" y="228" xml:space="preserve"><tspan fill="#3fb950">J0hnwood  </tspan><tspan fill="#c9d1d9">1341   6.4  </tspan><tspan fill="#39c5cf">S     </tspan><tspan fill="#c9d1d9">./linux --internals --syscalls --elf</tspan></text>
+<text x="22" y="249" xml:space="preserve"><tspan fill="#3fb950">J0hnwood  </tspan><tspan fill="#c9d1d9">1342   0.1  </tspan><tspan fill="#ff5f56">Z     </tspan><tspan fill="#c9d1d9">./sleep   </tspan><tspan fill="#5c6370"># zombie process, rarely scheduled</tspan><tspan class="cur" fill="#00ff9c"> █</tspan></text>
+</svg>

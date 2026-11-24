@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="817" height="424" viewBox="0 0 817 424">
+<style>text{font-family:'JetBrains Mono','Fira Code',SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;font-size:14px;white-space:pre}@keyframes b{50%{opacity:0}}.cur{animation:b 1s steps(1) infinite}</style>
+<rect x="0.5" y="0.5" width="816" height="423" rx="10" fill="#000000" stroke="#0f3d24"/>
+<path d="M0.5 34 V10.5 a10 10 0 0 1 10 -10 H806.5 a10 10 0 0 1 10 10 V34 Z" fill="#0b0f0c"/>
+<line x1="0.5" y1="34" x2="816.5" y2="34" stroke="#0f3d24"/>
+<circle cx="20" cy="17" r="6" fill="#ff5f56"/><circle cx="40" cy="17" r="6" fill="#ffbd2e"/><circle cx="60" cy="17" r="6" fill="#27c93f"/>
+<text x="408.5" y="22" text-anchor="middle" fill="#5c6370" style="font-size:12px">zsh — nmap</text>
+<text x="22" y="60" xml:space="preserve"><tspan fill="#58a6ff">┌──(</tspan><tspan fill="#00ff9c">J0hnwood㉿macbook</tspan><tspan fill="#58a6ff">)-[</tspan><tspan fill="#c9d1d9">~</tspan><tspan fill="#58a6ff">]</tspan></text>
+<text x="22" y="81" xml:space="preserve"><tspan fill="#58a6ff">└─</tspan><tspan fill="#00ff9c">$ </tspan><tspan fill="#c9d1d9">nmap -sV J0hnwood</tspan></text>
+<text x="22" y="123" xml:space="preserve"><tspan fill="#5c6370">Starting Nmap 7.95 ( https://nmap.org )</tspan></text>
+<text x="22" y="144" xml:space="preserve"><tspan fill="#c9d1d9">Nmap scan report for </tspan><tspan fill="#00ff9c">J0hnwood</tspan><tspan fill="#c9d1d9"> (127.0.0.1)</tspan></text>
+<text x="22" y="165" xml:space="preserve"><tspan fill="#c9d1d9">Host is </tspan><tspan fill="#00ff9c">up</tspan><tspan fill="#c9d1d9"> (0.0013s latency).</tspan></text>
+<text x="22" y="207" xml:space="preserve"><tspan fill="#5c6370">PORT       STATE     SERVICE     VERSION</tspan></text>
+<text x="22" y="228" xml:space="preserve"><tspan fill="#c9d1d9">22/tcp     </tspan><tspan fill="#00ff9c">open      </tspan><tspan fill="#39c5cf">linux       </tspan><tspan fill="#c9d1d9">Ubuntu (KDE) / macOS daily driver</tspan></text>
+<text x="22" y="249" xml:space="preserve"><tspan fill="#c9d1d9">80/tcp     </tspan><tspan fill="#00ff9c">open      </tspan><tspan fill="#39c5cf">web-hack    </tspan><tspan fill="#c9d1d9">Burp Suite · SQLi · XSS · SSRF · auth</tspan></text>
+<text x="22" y="270" xml:space="preserve"><tspan fill="#c9d1d9">443/tcp    </tspan><tspan fill="#00ff9c">open      </tspan><tspan fill="#39c5cf">python      </tspan><tspan fill="#c9d1d9">automation · scraping · data analysis</tspan></text>
+<text x="22" y="291" xml:space="preserve"><tspan fill="#c9d1d9">1337/tcp   </tspan><tspan fill="#00ff9c">open      </tspan><tspan fill="#39c5cf">pwn         </tspan><tspan fill="#c9d1d9">C/C++ · stack · ROP · heap (in progress)</tspan></text>
+<text x="22" y="312" xml:space="preserve"><tspan fill="#c9d1d9">3306/tcp   </tspan><tspan fill="#00ff9c">open      </tspan><tspan fill="#39c5cf">database    </tspan><tspan fill="#c9d1d9">MySQL · PostgreSQL</tspan></text>
+<text x="22" y="333" xml:space="preserve"><tspan fill="#c9d1d9">31337/tcp  </tspan><tspan fill="#00ff9c">open      </tspan><tspan fill="#39c5cf">reversing   </tspan><tspan fill="#c9d1d9">x86 / ARM assembly · IDA · Ghidra</tspan></text>
+<text x="22" y="354" xml:space="preserve"><tspan fill="#c9d1d9">8080/tcp   </tspan><tspan fill="#e3b341">filtered  </tspan><tspan fill="#39c5cf">sleep       </tspan><tspan fill="#5c6370">no response</tspan></text>
+<text x="22" y="396" xml:space="preserve"><tspan fill="#c9d1d9">Nmap done: 1 IP address (1 host up) scanned in </tspan><tspan fill="#00ff9c">13.37</tspan><tspan fill="#c9d1d9"> seconds</tspan><tspan class="cur" fill="#00ff9c"> █</tspan></text>
+</svg>
