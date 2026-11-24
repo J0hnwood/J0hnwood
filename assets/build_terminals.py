@@ -42,7 +42,7 @@ def prompt(cmd):
 
 
 # ── easter egg: visitors have to decode these themselves ──────────────
-SECRET = "flag{y0u_r34d_h3x_l1k3_a_h4ck3r}"  # shown only as hex
+SECRET = "flag{n0t_f0r3v3r}"  # shown only as hex
 HINT = "hex -> ascii"  # shown only as binary
 
 
