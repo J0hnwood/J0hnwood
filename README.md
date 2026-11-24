@@ -29,11 +29,15 @@
 
 ```console
 ┌──(J0hnwood㉿macbook)-[~]
-└─$ ps aux | grep learning
+└─$ ps aux | grep J0hnwood
 
-J0hnwood  1337  C / C++        # system-level & reversing
-J0hnwood  1338  Python         # automation & data collection
-J0hnwood  1339  Web internals  # how the web really works
+USER      PID   %CPU  STAT  COMMAND
+J0hnwood  1337  42.0  R+    ./c_cpp --memory --pointers --for-reversing
+J0hnwood  1338  27.5  R     ./python --automation --scraping --data-analysis
+J0hnwood  1339  14.3  S     ./web --http --auth --sqli --xss
+J0hnwood  1340   9.8  S     ./asm --x86 --arm --read-disassembly
+J0hnwood  1341   6.4  S     ./linux --internals --syscalls --elf
+J0hnwood  1342   0.1  Z     ./sleep   # zombie process, rarely scheduled
 ```
 
 ## `$ ls ~/arsenal`
@@ -55,10 +59,26 @@ J0hnwood  1339  Web internals  # how the web really works
 
 ## `$ cat goals.md`
 
-- [ ] Strengthen cybersecurity fundamentals, one layer at a time
-- [ ] Learn practical web exploitation
-- [ ] Understand system structures through reverse engineering
-- [ ] Build strong analysis skills for security & cyber intelligence
+```diff
+# ── Stage 1 : Foundation ───────────────────────────
++ [x] Set up a Linux / macOS security lab
++ [x] Get comfortable with C, Python and the terminal
+- [ ] Master pointers, memory layout and the stack
+
+# ── Stage 2 : Exploitation ─────────────────────────
+- [ ] Solve web wargames (SQLi · XSS · SSRF · auth bypass)
+- [ ] Learn buffer overflow → ROP on Linux binaries
+- [ ] Use Burp Suite fluently in real assessments
+
+# ── Stage 3 : Analysis ─────────────────────────────
+- [ ] Reverse crackmes with Ghidra / IDA
+- [ ] Analyze real-world malware samples safely
+- [ ] Write up every solve and publish it here
+
+# ── Long term ──────────────────────────────────────
+- [ ] Play CTFs regularly with a team
+- [ ] Work in cyber-threat intelligence & security research
+```
 
 ## `$ ./stats.sh`
 
