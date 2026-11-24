@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="817" height="250" viewBox="0 0 817 250">
 <defs><filter id="glow" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1" fill="#ffffff" opacity="0.045"/></pattern><radialGradient id="vig" cx="50%" cy="55%" r="65%"><stop offset="0%" stop-color="#00ff9c" stop-opacity="0.10"/><stop offset="100%" stop-color="#000" stop-opacity="0"/></radialGradient></defs>
-<style>text{font-family:'JetBrains Mono','Fira Code',SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;font-size:14px;white-space:pre}@keyframes b{50%{opacity:0}}.cur{animation:b 1s steps(1) infinite}@keyframes g1{0%,86%,100%{transform:translate(0,0)}88%{transform:translate(-6px,2px)}90%{transform:translate(5px,-2px)}92%{transform:translate(-3px,0)}}@keyframes g2{0%,86%,100%{transform:translate(0,0)}88%{transform:translate(6px,-2px)}90%{transform:translate(-5px,2px)}92%{transform:translate(3px,0)}}.r{animation:g1 4s infinite}.c{animation:g2 4s infinite}</style>
+<style>text{font-family:'JetBrains Mono','Fira Code',SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;font-size:14px;white-space:pre}@keyframes b{50%{opacity:0}}.cur{animation:b 1s steps(1) infinite}</style>
 <rect x="0.5" y="0.5" width="816" height="249" rx="10" fill="#000000" stroke="#0f3d24"/>
 <path d="M0.5 36 V10.5 a10 10 0 0 1 10 -10 H806.5 a10 10 0 0 1 10 10 V36 Z" fill="#2b2b2b"/>
 <line x1="0.5" y1="36" x2="816.5" y2="36" stroke="#0f3d24"/>
@@ -8,8 +8,6 @@
 <text x="408.5" y="23" text-anchor="middle" fill="#cfcfcf" style="font-size:12px;font-weight:bold">J0hnwood@ubuntu: ~</text>
 <rect x="1" y="37" width="815" height="212" fill="url(#vig)"/>
 <text x="22" y="64" xml:space="preserve"><tspan fill="#8ae234">J0hnwood@ubuntu</tspan><tspan fill="#c9d1d9">:</tspan><tspan fill="#729fcf">~</tspan><tspan fill="#c9d1d9">$ ./whoami --banner</tspan></text>
-<text class="r" x="408.5" y="150" text-anchor="middle" fill="#ff0055" opacity="0.55" style="font-size:78px;font-weight:800;letter-spacing:4px">J0hnwood</text>
-<text class="c" x="408.5" y="150" text-anchor="middle" fill="#00e5ff" opacity="0.55" style="font-size:78px;font-weight:800;letter-spacing:4px">J0hnwood</text>
 <text x="408.5" y="150" text-anchor="middle" fill="#00ff9c" filter="url(#glow)" style="font-size:78px;font-weight:800;letter-spacing:4px">J0hnwood</text>
 <text x="408.5" y="192" text-anchor="middle" fill="#5c6370" xml:space="preserve" style="font-size:15px">// cybersecurity learner  ·  pwn  ·  web  ·  reversing</text>
 <text x="22" y="232" xml:space="preserve"><tspan fill="#8ae234">J0hnwood@ubuntu</tspan><tspan fill="#c9d1d9">:</tspan><tspan fill="#729fcf">~</tspan><tspan fill="#c9d1d9">$</tspan><tspan class="cur" fill="#00ff9c"> █</tspan></text>

@@ -177,9 +177,7 @@ def render_banner():
         "<style>text{font-family:'JetBrains Mono','Fira Code',SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;"
         f"font-size:{FONT}px;white-space:pre}}"
         "@keyframes b{50%{opacity:0}}.cur{animation:b 1s steps(1) infinite}"
-        "@keyframes g1{0%,86%,100%{transform:translate(0,0)}88%{transform:translate(-6px,2px)}90%{transform:translate(5px,-2px)}92%{transform:translate(-3px,0)}}"
-        "@keyframes g2{0%,86%,100%{transform:translate(0,0)}88%{transform:translate(6px,-2px)}90%{transform:translate(-5px,2px)}92%{transform:translate(3px,0)}}"
-        ".r{animation:g1 4s infinite}.c{animation:g2 4s infinite}</style>",
+        "</style>",
         f'<rect x="0.5" y="0.5" width="{WIDTH - 1}" height="{height - 1}" rx="10" fill="{BG}" stroke="{BORDER}"/>',
         f'<path d="M0.5 {TITLE_H} V10.5 a10 10 0 0 1 10 -10 H{WIDTH - 10.5} a10 10 0 0 1 10 10 V{TITLE_H} Z" fill="{BAR}"/>',
         f'<line x1="0.5" y1="{TITLE_H}" x2="{WIDTH - 0.5}" y2="{TITLE_H}" stroke="{BORDER}"/>',
@@ -189,8 +187,6 @@ def render_banner():
         f'<text x="{PAD_X}" y="{TITLE_H + 28}" xml:space="preserve">'
         f'<tspan fill="{U_GREEN}">J0hnwood@ubuntu</tspan><tspan fill="{FG}">:</tspan>'
         f'<tspan fill="{U_BLUE}">~</tspan><tspan fill="{FG}">$ ./whoami --banner</tspan></text>',
-        f'<text class="r" x="{cx}" y="{name_y}" text-anchor="middle" fill="#ff0055" opacity="0.55" style="{big}">J0hnwood</text>',
-        f'<text class="c" x="{cx}" y="{name_y}" text-anchor="middle" fill="#00e5ff" opacity="0.55" style="{big}">J0hnwood</text>',
         f'<text x="{cx}" y="{name_y}" text-anchor="middle" fill="{GREEN}" filter="url(#glow)" style="{big}">J0hnwood</text>',
         f'<text x="{cx}" y="{name_y + 42}" text-anchor="middle" fill="{DIM}" xml:space="preserve" style="font-size:15px">'
         f'// cybersecurity learner  ·  pwn  ·  web  ·  reversing</text>',
